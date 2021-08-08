@@ -1,99 +1,194 @@
----
 commands:
-  help: 이 도움말 화면을 표시합니다
-  cheat: 당신은 치트 아이템을 허용
-  give: 슬라임펀 아이템을 주다.
-  guide: Slimefun 가이드 책 제공
+  help: 이 도움말 화면 표시하기
+  cheat: 치트 아이템 허용하기
+  give: Slimefun 아이템 주기
+  guide: 본인에게 Slimefun 가이드 책 주기
   teleporter: 다른 플레이어의 웨이포인트 보기
-  versions: 설치된 모든 애드온 리스트
-  search: 주어진 기간 동안 가이드 검색
-  open_guide: 책을 사용하지 않고 슬라임펀 가이드 열기
-  stats: 플레이어에 대한 일부 통계 표시
+  versions: 설치된 모든 애드온 나열하기
+  search: 용어에 대한 가이드 검색하기
+  open_guide: 책을 사용하지 않고 Slimefun 가이드 열기
+  stats: 플레이어에 대한 통계 표시하기
+  
   research:
     description: 플레이어에 대한 조사 잠금 해제/재설정
-    reset: '&c%player%의 지식을 재설정하셨습니다.'
-    reset-target: '&c지식이 재설정됨'
+    reset: '&c%player%의 지식을 재설정하였습니다'
+    reset-target: '&c지식을 재설정함'
+  
   backpack:
-    description: 기존 배낭의 사본을 가져옵니다
-    invalid-id: '&4ID는 음수가 아닌 숫자 여야합니다!'
+    description: 기존 배낭의 사본을 찾습니다
+    invalid-id: '&4ID는 음수가 아닌 숫자여야 합니다!'
     player-never-joined: '&4그 이름의 플레이어를 찾을 수 없습니다!'
-    backpack-does-not-exist: '&4지정된 배낭이 없습니다!'
-    restored-backpack-given: '&a배낭이 복원되어 인벤토리에 추가되었습니다!'
+    backpack-does-not-exist: '&4지정된 배낭이 존재하지 않습니다!'
+    restored-backpack-given: '&a배낭을 복원해 인벤토리에 추가했습니다!'
+  
+  charge:
+    description: 들고 있는 아이템을 충전합니다
+    charge-success: 아이템을 충전했습니다!
+    not-rechargeable: 이 아이템을 충전할 수 없습니다!
+  
+  timings:
+    description: Slimefun 및 해당 애드온의 타이밍입니다
+    please-wait: '&e잠시만 기다려주세요... 결과가 나옵니다!'
+    verbose-player: '&4자세한 플래그는 플레이어가 사용할 수 없습니다!'
+    unknown-flag: '&4미확인 플래그: &c%flag%'
+
+placeholderapi:
+  profile-loading: '로딩 중...'
+
 guide:
   locked: '잠금'
+  work-in-progress: '이 기능은 아직 완료되지 않았습니다!'
+  
   locked-category:
     - '이 카테고리의 잠금을 해제하려면'
-    - '에서 모든 아이템의 잠금을 해제할 필요가 있다.'
-    - '다음 카테고리'
+    - '다음 카테고리의 모든 아이템을'
+    - '잠금 해제해야합니다'
+  
   search:
-    message: '&b무엇을 검색하시겠습니까?'
+    message: '&b무엇을 검색하겠습니까?'
     name: '&7검색...'
-    tooltip: '&b아이템을 검색하려면 클릭하십시오.'
-    inventory: '검색중: %item%'
+    tooltip: '&b아이템을 검색하려면 클릭하세요'
+    inventory: '검색 중: %item%'
+  
   tooltips:
-    open-category: '열려면 클릭하십시오. '
-    versions-notice: '이것들은 버그를 보고할 때 매우 중요하다! '
-    wiki: '공식 Slimefun Wiki에서 이 항목보기'
+    open-category: '열려면 클릭하세요'
+    versions-notice: '이것들은 버그를 보고할 때 매우 중요합니다!'
+    wiki: '공식 Slimefun Wiki에서 이 아이템 보기'
+    
     recipes:
       machine: '이 기계로 만든 조합법'
-      miner: '이 마이너로 얻을 수있는 자원'
+      miner: '이 Miner로 얻을 수 있는 자원'
       generator: '사용 가능한 연료 유형'
-      gold-pan: '얻을 수 있는 리소스'
+      gold-pan: '얻을 수 있는 자원'
+      climbing-pick: '오를 수 있는 표면'
+  
   cheat:
-    no-multiblocks: '&4여러분은 멀티블록에서 컨닝을 할 수 없습니다. 여러분이 그것들을 만들어야 합니다!'
+    no-multiblocks: '&4Multiblocks에서는 치트를 사용할 수 없습니다. 직접 빌드해야 합니다!'
+  
   pages:
     previous: '이전 페이지'
     next: '다음 페이지'
+  
   back:
-    title: '뒤'
-    guide: 'Slimefun 가이드로 돌아 가기'
-    settings: '설정 패널로 돌아갑니다'
+    title: '돌아가기'
+    guide: 'Slimefun 가이드로 돌아가기'
+    settings: '설정 패널로 돌아가기'
+  
   languages:
-    updated: '&a언어를 &b%lang%로 설정했습니다.'
-    selected-language: '현재 선택된 :'
-    select: '이 언어를 선택하려면 클릭하십시오.'
-    select-default: '기본 언어를 선택하려면 클릭하십시오.'
+    updated: '&a성공적으로 다음 언어로 설정했습니다: &b%lang%'
+    selected-language: '현재 선택:'
+    select: '이 언어를 선택하려면 클릭하세요'
+    select-default: '기본 언어를 선택하려면 클릭하세요'
+    change: '새 언어를 선택하려면 클릭하세요'
+    
+    description:
+    - '&7이제 Slimefun이 표시될'
+    - '&7언어를 변경할 수 있습니다.'
+    - '&7아이템이 지금 당장'
+    - '&7번역되지는 않습니다.'
+    
     translations:
-      name: '&a 뭔가 빠졌습니까?'
-      lore: '사용자 자신의 변환을 추가하려면 클릭하십시오. '
+      name: '&a누락된 번역이 있습니까?'
+      lore: '사용자 정의 번역을 추가하려면 클릭하세요'
+  
+  options:
+    learning-animation:
+      enabled:
+        text:
+          - '&b학습 애니메이션: &a예'
+          - ''
+          - '&7이제 아이템을 조사할 때'
+          - '&7채팅에서 고민에 대한 정보를'
+          - '&7볼 지를 전환할 수 있습니다.'
+        click: '&e학습 애니메이션을 비활성화하려면 클릭하세요'
+      disabled:
+        text:
+          - '&b학습 애니메이션: &4아니오'
+          - ''
+          - '&7이제 아이템을 조사할 때'
+          - '&7채팅에서 고민에 대한 정보를'
+          - '&7볼 지를 전환할 수 있습니다.'
+        click: '&e학습 애니메이션을 활성화하려면 클릭하세요'
+  
   title:
-    main: '슬라임펀 가이드'
+    main: 'Slimefun 가이드'
     settings: '설정 & 정보'
-    languages: '당신이 원하는 언어를 선택하십시오.'
-    credits: '슬라임펀4 기부자들입니다.'
-    wiki: 'Slimefun4 위키'
+    languages: '원하는 언어를 선택하세요'
+    credits: 'Slimefun4 기여자'
+    wiki: 'Slimefun4 Wiki'
     addons: 'Slimefun4의 애드온'
-    bugs: '버그 리포트'
+    bugs: '버그 보고'
     source: '소스 코드'
+    versions: '설치된 버전'
+  
   credits:
     commit: '커밋'
     commits: '커밋'
-    profile-link: 'GitHub에서 해당 프로필을 방문하려면 클릭하십시오.'
+    profile-link: 'GitHub 프로필을 방문하려면 클릭하세요'
+    open: '기여자들을 보려면 클릭하세요'
+    description:
+    - '&7Slimefun은 오픈 소스 프로젝트이며'
+    - '&7대규모 커뮤니티에 의해 유지됩니다.'
+    - '&7위 &e%기여자들%은 &7수년간'
+    - '&7Slimefun에서 작업했습니다.'
+    
     roles:
       developer: '&6개발자'
-      wiki: "&3위키 편집기\n"
-      resourcepack: '&c리소스 팩 아티스트'
-      translator: '&9번역가'
+      wiki: "&3위키 편집 참여자"
+      resourcepack: '&c리소스팩 아티스트'
+      translator: '&9번역 참여자'
+
 messages:
-  not-enough-xp: "&4XP가 부족하여 이 잠금을 해제할 수 없습니다.\n"
-  unlocked: '&7"%research%"&b의 잠금을 해제했습니다.'
-  only-players: '&4이 명령은 플레이어 전용입니다.'
+  not-researched: '&4이것을 이해하기 위한 충분히 지식이 없습니다. &f"%item%&f"을(를) &c잠금 해제해야 합니다'
+  not-enough-xp: '&4이것을 잠금 해제하기 위한 XP가 부족합니다'
+  unlocked: '&7"%research%"&b을(를) 잠금 해제했습니다'
+  only-players: '&4이 명령은 플레이어 전용입니다'
   unknown-player: '&4알 수 없는 플레이어: &c%player%'
-  no-permission: '&4이 작업에 필요한 권한이 없습니다.'
-  usage: "&4사용량: &c%usage%\n"
-  not-online: '&4%player% &cis가 온라인 상태가 아닙니다!'
-  invalid-item: '&4%item% &cis가 올바른 아이템이 아닙니다!'
-  invalid-amount: '&4%amount% &cis 유효한 금액이 아닙니다. 0보다 커야 합니다!'
-  given-item: '&b당신은 &a%amount% &7"%item%&7"을 받았다.'
-  give-item: '&b%player% &a%amount% &7"%item%&7"을(를) 제공하셨습니다.'
-  invalid-research: "&4%research% &cis가 유효하지 않은 연구!\n"
-  give-research: '&b%player%에 Research &7"%research%&7"을(를) 제공했습니다. '
-  hungry: '&c당신은 그것을 하기에는 너무 배가 고파요!'
-  disabled-in-world: '&4&l이 아이템은 이 세상에서 사용할 수 없습니다'
-  disabled-item: '&4&l이 아이템을 사용할 수 없습니다! 어떻게 그런 걸 얻었어요?'
-  no-tome-yourself: '&c당신은 &4Tome of Knowledge &con은 직접 사용할 수 없습니다.'
-  multimeter: '&b저장된 에너지: &3%stored% &b/&3% capacity%'
-  piglin-barter: '&4슬라임 펀 아이템을 사용하여 piglins와 물물 교환을 할 수 없습니다'
+  no-permission: '&4당신은 이것을 하기 위해 필요한 권한이 없습니다'
+  usage: "&4사용법: &c%usage%\n"
+  not-online: '&4%player%&c은(는) 온라인 상태가 아닙니다!'
+  invalid-item: '&4%item%&c은(는) 유효한 아이템이 아닙니다!'
+  invalid-amount: '&4%amount%&c은(는) 유효한 양이 아닙니다 : 0보다 커야 합니다!'
+  given-item: '&a%amount%&b개의 &7"%item%&7"&b을(를) 받았습니다'
+  give-item: '&b%player%에게 &a%amount%&b개의 &7"%item%&7"&b을(를) 주었습니다'
+  invalid-research: '&4%research%&c은(는) 유효한 연구가 아닙니다!'
+  give-research: '&b%player%에게 &7"%research%&7" &b연구를 주었습니다'
+  hungry: '&c그것을 하기에는 너무 배고픕니다!'
+  disabled-in-world: '&4&l이 아이템을 이 월드에서 비활성화했습니다'
+  disabled-item: '&4&l이 아이템은 비활성화되었습니다! 어떻게 그런 걸 얻었어요?'
+  no-tome-yourself: '&c당신은 &4지식의 고서&c를 스스로 사용할 수 없습니다...'
+  multimeter: '&b저장된 에너지: &3%stored% &b/ &3% capacity%'
+  piglin-barter: '&4Slimefun 아이템을 사용하여 피글린과 물물교환할 수 없습니다.'
+  bee-suit-slow-fall: '&e당신의 꿀벌 날개는 당신이 안전하고 천천히 지상으로 돌아갈 수 있도록 도와줄 것입니다'
+  
+  multi-tool:
+    mode-change: '&b%device% mode changed to: &9%mode%'
+    not-shears: '&cA Multi Tool cannot be used as shears!'
+
+  auto-crafting:
+    select-a-recipe: '&eCrouch and Right-Click &7this block with the item you want it to craft.'
+    recipe-set: '&aYou have successfully set the recipe for this machine.'
+    recipe-removed: '&eYou have successfully removed the recipe from this machine. You can set a new recipe at any time!'
+    no-recipes: '&cWe could not find any valid recipes for the item you are holding.'
+    missing-chest: '&cMissing chest! Auto-Crafters need to be placed above a chest.'
+    select: 'Select this recipe'
+    temporarily-disabled: '&eThis Auto-Crafter was temporarily disabled. You can re-enable it at any time!'
+    re-enabled: '&eThis Auto-Crafter was re-enabled!'
+    recipe-unavailable: |
+      &cThis item is either disabled on your server, or you have not unlocked it yet.
+      &7Try crafting the item if you have not done this before to unlock the recipe.
+    tooltips:
+      enabled:
+      - '&aThis recipe is currently enabled'
+      - ''
+      - '&eLeft Click &7to temporarily disable the recipe'
+      - '&eRight Click &7to remove this recipe'
+      disabled:
+      - '&cThis recipe is currently disabled'
+      - ''
+      - '&eLeft Click &7to re-enable this recipe'
+      - '&eRight Click &7to remove this recipe'
+  
   talisman:
     anvil: '&a&o당신의 탈리스맨이 당신의 도구가 부셔지는 것을 막아줬습니다.'
     miner: '&a&o당신의 탈리스맨이 당신의 방울을 두 배로 늘렸어요'
