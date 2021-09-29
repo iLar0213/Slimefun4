@@ -162,21 +162,22 @@ messages:
   bee-suit-slow-fall: '&e당신의 꿀벌 날개는 당신이 안전하고 천천히 지상으로 돌아갈 수 있도록 도와줄 것입니다'
   
   multi-tool:
-    mode-change: '&b%device% mode changed to: &9%mode%'
-    not-shears: '&cA Multi Tool cannot be used as shears!'
+    mode-change: '&b%device% 모드가 다음과 같이 변경되었습니다: &9%mode%'
+    not-shears: '&c다중 도구를 가위로 사용할 수 없습니다!'
 
   auto-crafting:
-    select-a-recipe: '&eCrouch and Right-Click &7this block with the item you want it to craft.'
+    select-a-recipe: '&7작업하고자 하는 아이템을 들고 이 블록을 &e웅크린 채 우클릭&7합니다.'
     recipe-set: '&aYou have successfully set the recipe for this machine.'
     recipe-removed: '&eYou have successfully removed the recipe from this machine. You can set a new recipe at any time!'
     no-recipes: '&cWe could not find any valid recipes for the item you are holding.'
     missing-chest: '&cMissing chest! Auto-Crafters need to be placed above a chest.'
-    select: 'Select this recipe'
-    temporarily-disabled: '&eThis Auto-Crafter was temporarily disabled. You can re-enable it at any time!'
+    select: '이 조합법을 선택'
+    temporarily-disabled: '&eThis Auto-Crafter was temporarily disabled. 언제든지 다시 활성화할 수 있습니다!'
     re-enabled: '&eThis Auto-Crafter was re-enabled!'
     recipe-unavailable: |
       &cThis item is either disabled on your server, or you have not unlocked it yet.
       &7Try crafting the item if you have not done this before to unlock the recipe.
+    
     tooltips:
       enabled:
       - '&aThis recipe is currently enabled'
@@ -190,34 +191,45 @@ messages:
       - '&eRight Click &7to remove this recipe'
   
   talisman:
-    anvil: '&a&o당신의 탈리스맨이 당신의 도구가 부셔지는 것을 막아줬습니다.'
+    anvil: '&a&o부적이 당신의 도구 손상을 막았습니다'
     miner: '&a&o당신의 탈리스맨이 당신의 방울을 두 배로 늘렸어요'
     hunter: '&a&o당신의 탈리스맨이 당신의 방울을 두 배로 늘렸어요'
-    lava: '&a&o당신의 탈리스맨은 당신을 용암에 타죽는 것으로부터 구했습니다.'
-    water: '&a&o당신의 탈리스맨이 당신을 익사로부터 구했어요'
-    angel: '&a&o당신의 탈리스맨이 당신을 낙상 피해로부터 구했습니다.'
-    fire: '&a&o당신의 탈리스맨은 당신을 불에 타죽는 것으로부터 구했습니다.'
+    lava: '&a&o당신의 부적이 용암에 빠져 죽는 것을 막았습니다.'
+    water: '&a&o부적이 당신의 익사를 막았습니다'
+    angel: '&a&o부적이 당신의 낙사를 막았습니다'
+    fire: '&a&o당신의 부적이 불에 타 죽는 것을 막았습니다'
     magician: '&a&o당신의 탈리스맨이 당신에게 추가 약속을 했습니다.'
     traveller: '&a&o당신의 탈리스맨이 당신에게 스피드 부스트를 주었습니다.'
     warrior: '&a&o당신의 탈리스맨은 당신의 힘을 잠시 향상시켰습니다.'
     knight: '&a&o당신의 탈리스맨은 당신에게 5초의 재생 시간을 주었습니다.'
     whirlwind: "&a&o당신의 탈리스맨은 발사체를 반사했다.\n"
     wizard: "&a&o당신의 탈리스맨은 당신에게 더 나은 행운 레벨을 주었지만, 아마도 몇몇 다른 인첸트 레벨도 낮췄을 것입니다.\n"
+    caveman: '&a&oYour Talisman gave you haste'
+    wise: '&a&oYour Talisman has doubled your experience drops'
+  
   soulbound-rune:
     fail: '&c한 번에 한 항목만 영혼에 묶을 수 있습니다.'
     success: '&a이 아이템을 당신의 영혼에 성공적으로 묶었습니다! 당신은 죽을 때 그것을 간직할 것입니다.'
+  
   enchantment-rune:
     fail: '&c이 아이템을 마법 부여 할 수 없습니다.'
     no-enchantment: '&c이 항목에 해당하는 마법을 찾을 수 없습니다.'
     success: '&a이 아이템에 무작위로 적용 가능한 마법 부여를 성공적으로 적용했습니다.'
+  
   research:
     start: '&7고대의 정령들은 당신의 귀에 신비한 말을 속삭입니다!'
     progress: '&b%research% &e(%progress%)&7에 대해 궁금해하기 시작합니다.'
+  
   tape-measure:
     no-anchor: '&c측정을 시작하기 전에 앵커를 설정해야합니다!'
     wrong-world: '&c앵커가 다른 세상에있는 것 같습니다.'
     distance: '&7측정이 완료되었습니다. &e거리 : %distance%'
     anchor-set: '&a앵커를 설정했습니다 : &e%anchor%'
+  
+  climbing-pick:
+    dual-wielding: '&4You need to hold Climbing Picks in both hands to use them!'
+    wrong-material: '&cYou cannot climb this surface. Check your Slimefun Guide for more info!'
+  
   fire-extinguish: '&7당신은 스스로를 소멸시켰습니다.'
   cannot-place: '&c저 블럭은 그곳에 둘 수 없어요!'
   no-pvp: '&c여기선 pvp 할 수 없어요!'
@@ -227,21 +239,28 @@ messages:
   no-iron-golem-heal: "&c그건 철괴가 아닙니다. 아이언 골렘을 치료하기 위해 이것을 사용할 수는 없습니다!\n"
   link-prompt: '&e여기를 클릭:'
   diet-cookie: "&e당신은 매우 가벼워지기 시작했어요...\n"
+  
   fortune-cookie:
-    - '&7도와주세요, 저는 행운 쿠키 공장에 갇혔어요!'
-    - '&7당신은 내일 죽을 거예요... 크리퍼에 의해서요.'
-    - '&7당신 인생의 어느 시점에 나쁜 일이 일어날 거예요!!!'
-    - '&7다음 주에 당신은 이것이 현실 세계가 아니라는 것을 알게 될 것입니다. 당신은 컴퓨터 게임에 빠져 있습니다.'
-    - '&7이 쿠키는 몇 초 안에 맛있을 거예요.'
-    - '&7마지막으로 듣게 될 말은 "EXTERMINATE!"입니다.!" '
-    - "&7무슨 일을 하든지, 크리퍼를 껴안지 마세요... 나는 그것을 시도해봤어요. 기분은 좋지만, 그럴 만한 가치는 없어요.\n"
-    - "&742. 정답은 42입니다.\n"
-    - "&7하루에 월시가 있으면 그 문제를 피할 수 있어요.\n"
-    - "&7절대 아래로 파고들지 마세요!\n"
-    - '&7살이지만 살 상처!'
-    - '&7항상 인생의 밝은면을 바라보세요!'
-    - '&7이것은 실제로 쿠키가 아닌 비스킷이었습니다.'
-    - '&7네온 사인이 LIT입니다!'
+  - '&7도와주세요, 저는 행운 쿠키 공장에 갇혔어요!'
+  - '&7당신은 내일 죽을 거예요... 크리퍼에 의해서요.'
+  - '&7당신 인생의 어느 시점에 나쁜 일이 일어날 거예요!!!'
+  - '&7다음 주에 당신은 이것이 현실 세계가 아니라는 것을 알게 될 것입니다. 당신은 컴퓨터 게임에 빠져 있습니다.'
+  - '&7이 쿠키는 몇 초 안에 맛있을 거예요.'
+  - '&7마지막으로 듣게 될 말은 "EXTERMINATE!"입니다.!" '
+  - "&7무슨 일을 하든지, 크리퍼를 껴안지 마세요... 나는 그것을 시도해봤어요. 기분은 좋지만, 그럴 만한 가치는 없어요.\n"
+  - "&742. 정답은 42입니다.\n"
+  - "&7하루에 월시가 있으면 그 문제를 피할 수 있어요.\n"
+  - "&7절대 아래로 파고들지 마세요!\n"
+  - '&7살이지만 살 상처!'
+  - '&7항상 인생의 밝은면을 바라보세요!'
+  - '&7이것은 실제로 쿠키가 아닌 비스킷이었습니다.'
+  - '&7네온 사인이 LIT입니다!'
+    
+  above-limit-level: '&cCannot (dis)enchant an enchantment level higher than %level%!'
+
+  pickaxe-of-the-seeker:
+    no-ores: '&cCannot find any nearby ores!'
+    
 machines:
   pattern-not-found: '&e죄송합니다. 이 조합법를 인식할 수 없습니다. 디스펜서에 항목을 올바른 패턴으로 배치해 주십시오.'
   unknown-material: '&e죄송합니다. 디스펜서에 있는 항목을 인식할 수 없습니다. 제가 알고 있는 아이템을 좀 넣어 주세요.'
@@ -249,15 +268,20 @@ machines:
   full-inventory: "&e죄송합니다. 재고가 너무 꽉 찼습니다!\n"
   in-use: '&c이 블록의 인벤토리는 현재 다른 플레이어에 의해 열립니다.'
   ignition-chamber-no-flint: '&c점화 챔버에 라이터가 없습니다.'
+  inventory-empty: '&6You have successfully constructed this Multiblock. Proceed by placing items inside the dispenser and click me again to craft the item you want!'
+  
   ANCIENT_ALTAR:
     not-enough-pedestals: "&4Altar는 필요한 수의 Pedestals &c(%pedestals% / 8)로 둘러싸여 있지 않습니다.\n"
     unknown-catalyst: '&4알 수 없는 촉매입니다! &c대신 올바른 조합법를 사용하세요!'
     unknown-recipe: '&4알 수 없는 조합법입니다! &c대신 올바른 조합법를 사용하세요!'
+  
   ANCIENT_PEDESTAL:
     obstructed: "&4페달이 막혔어요! 받침대 위에 있는 것은 모두 &c제거&4하세요!\n"
+    
   HOLOGRAM_PROJECTOR:
     enter-text: '&7원하는 홀로그램 텍스트를 대화 상자에 입력해 주십시오. &r(색상 코드가 지원됨!)'
     inventory-title: '홀로그램 편집기'
+    
   ELEVATOR:
     no-destinations: "&4대상을 찾을 수 없습니다.\n"
     pick-a-floor: "&3- 바닥을 고르세요 -\n"
@@ -265,21 +289,26 @@ machines:
     click-to-teleport: '&e해당 층으로 텔레포트를 하실려면 클릭:'
     enter-name: '&7원하는 플로어 이름을 채팅에 입력하십시오. &r(색상 코드가 지원됨!)'
     named: '&2이 층의 이름을 성공적으로 지정함: &r%floor%'
+    
   TELEPORTER:
     teleporting: '&3텔레포팅중...'
     teleported: '&3텔레포트!'
     cancelled: '&4텔레포트를 취소!'
     invulnerability: '&b&l30초간의 불굴의 시간을 주셨습니다!'
+    
     gui:
       title: '당신의 경유지'
       tooltip: '텔레포트 클릭'
       time: '예상시간'
+      
   GPS_CONTROL_PANEL:
     title: 'GPS - 제어판'
     transmitters: 'GPS 개요'
     waypoints: '웨이포인트 개요'
+    
   CARGO_NODES:
     must-be-placed: "&4상자 또는 기계 위에 놓아야 한다!\n"
+    
   INDUSTRIAL_MINER:
     no-fuel: '&c귀하의 산업용 채광 장치의 연료가 부족합니다! 연료를 위 상자에 넣으십시오.'
     piston-facing: '&c귀하의 산업용 채광 장치는 피스톤을 위로 향하게해야합니다!'
@@ -289,70 +318,99 @@ machines:
     full-chest: '&c산업용 채광 장치의 상자가 가득 찼습니다!'
     no-permission: '&4여기에서 산업용 채광 장치를 운영 할 권한이없는 것 같습니다!'
     finished: '&e산업용 채광 장치가 완료되었습니다! 총 광석 %ores%을 (를) 획득했습니다!'
+    
 anvil:
   not-working: '&4슬라임펀 아이템은 모루에서 사용할 수 없다!'
+  mcmmo-salvaging: '&4You cannot salvage Slimefun items!'
+  
+brewing_stand:
+  not-working: '&4You cannot use Slimefun items in a brewing stand!'
+
+cartography_table:
+  not-working: '&4You cannot use Slimefun items in a cartography table!'
+
+villagers:
+  no-trading: '&4You cannot trade Slimefun items with Villagers!'
+
 backpack:
   already-open: '&c죄송합니다. 이 백팩은 다른 곳에 열려 있습니다!'
   no-stack: '&c백팩을 쌓을 수 없습니다.'
+  
 workbench:
   not-enhanced: '&4일반 작업대에서는 Slimefun 아이템을 사용할 수 없습니다.'
+  
+cauldron:
+  no-discoloring: '&4You cannot discolor Slimefun Armor'
+  
 gps:
   deathpoint: '&4데스포인트 &7%date%'
   waypoint:
     new: "&e대화에서 새 waypoint 이름을 입력하십시오. &7(색상 코드 지원!)\n"
     added: "&a새로운 waypoint를 성공적으로 추가\n"
     max: "&4waypoint의 최대 양에 도달하셨습니다.\n"
+    duplicate: '&4You have already created a waypoint named: &f%waypoint%'
+    
   insufficient-complexity:
     - '&4GPS 네트워크의 복잡성 부족: &c%complexity%'
     - "&4a)GPS 네트워크가 아직 설정되지 않음\n"
     - "&4b) GPS 네트워크가 충분히 복잡하지 않습니다.\n"
+    
   geo:
     scan-required: "&4GEO-Scan이 필요합니다! 먼저 GEO-Scanner를 사용하여 이 청크를 스캔하세요!\n"
+    
 inventory:
   no-access: '&4이 블록에 액세스할 수 없습니다.'
+  
 android:
   started: "&7Android가 스크립트 실행을 재개했습니다.\n"
   stopped: "&7Android가 스크립트를 일시 중지했습니다.\n"
+  
   scripts:
     already-uploaded: "&4이 스크립트는 이미 업로드되었습니다.\n"
     editor: '스크립트 편집기'
+    too-long: '&cThe script is too long to edit!'
+    
     instructions:
-      START: "&2시작 스크립트\n"
-      REPEAT: "&9반복 스크립트\n"
-      WAIT: "&e0.5초간 대기\n"
-      GO_FORWARD: '&7전진하다'
-      GO_UP: "&7위로 이동\n"
-      GO_DOWN: "&7아래로 이동\n"
-      TURN_LEFT: "&7왼쪽으로 돌다\n"
-      TURN_RIGHT: '&7오른쪽으로 돌다'
-      DIG_UP: '&b위로 파다'
-      DIG_FORWARD: '&b앞으로 파다'
-      DIG_DOWN: '&b아래로 파다'
-      MOVE_AND_DIG_UP: '&b위쪽으로 이동 & 파기'
+      START: '&2스크립트 시작'
+      REPEAT: '&9스크립트 반복'
+      WAIT: '&e0.5초간 대기'
+      GO_FORWARD: '&7앞으로 이동'
+      GO_UP: '&7위로 이동'
+      GO_DOWN: '&7아래로 이동'
+      TURN_LEFT: '&7왼쪽으로 돌기'
+      TURN_RIGHT: '&7오른쪽으로 돌기'
+      DIG_UP: '&b위를 파기'
+      DIG_FORWARD: '&b앞을 파기'
+      DIG_DOWN: '&b아래를 파기'
+      MOVE_AND_DIG_UP: '&b위로 이동 & 파기'
       MOVE_AND_DIG_FORWARD: '&b앞으로 이동 & 파기'
       MOVE_AND_DIG_DOWN: '&b아래로 이동 & 파기'
-      ATTACK_MOBS_ANIMALS: "&4공격 &c(호스틸 몹 & 동물)\n"
-      ATTACK_MOBS: "&4공격 &c(호스틸 몹)\n"
-      ATTACK_ANIMALS: "&4공격 &c(동물)\n"
-      ATTACK_ANIMALS_ADULT: "&4공격 &c(동물&7[성인]&c)\n"
-      CHOP_TREE: "&c잘라내기 및 대체제\n"
-      CATCH_FISH: "&b캐치 피시\n"
-      FARM_FORWARD: "&b수확 및 대체품목\n"
-      FARM_DOWN: "&b수확 및 교체 &7(밑면 차단)\n"
-      FARM_EXOTIC_FORWARD: '&b고급 수집 및 복제품'
-      FARM_EXOTIC_DOWN: '&b고급 수집 및 복제품 &7(밑면 차단)'
-      INTERFACE_ITEMS: '&9인벤토리 내용을 대면 인터페이스로 푸시'
-      INTERFACE_FUEL: "&c대면된 인터페이스에서 연료 꺼내기\n"
+      ATTACK_MOBS_ANIMALS: '&4공격 &c(적대적 몹 & 동물)'
+      ATTACK_MOBS: '&4공격 &c(적대적 몹)'
+      ATTACK_ANIMALS: '&4공격 &c(동물)'
+      ATTACK_ANIMALS_ADULT: '&4공격 &c(동물 &7[성체]&c)'
+      CHOP_TREE: '&c베고 다시 심기'
+      CATCH_FISH: '&b낚시'
+      FARM_FORWARD: '&b수확하고 다시 심기'
+      FARM_DOWN: '&b수확하고 다시 심기 &7(밑면 차단)'
+      FARM_EXOTIC_FORWARD: '&b향상된 수확하고 다시 심기'
+      FARM_EXOTIC_DOWN: '&b향상된 수확하고 다시 심기 &7(밑면 차단)'
+      INTERFACE_ITEMS: '&9인벤토리의 품목을 창에 넣기'
+      INTERFACE_FUEL: '&c창에서 연료 꺼내기'
+      
     enter-name:
-      - ''
-      - "&e스크립트의 이름을 입력하십시오.\n"
-      - ''
+    - ''
+    - '&e스크립트의 이름을 입력하십시오.'
+    - ''
+      
     uploaded:
-      - '&b업로드중...'
-      - '& a 성공적으로 스크립트를 업로드했습니다!'
+    - '&b업로드 중...'
+    - '&a스크립트를 성공적으로 업로드했습니다!'
+    
     rating:
-      own: '& 4 자신의 스크립트를 평가할 수 없습니다!'
-      already: '& 4이 스크립트에 대한 평가를 이미 남겼습니다!'
+      own: '&4자신의 스크립트는 평가할 수 없습니다!'
+      already: '&4이미 이 스크립트에 대한 평가를 남겼습니다!'
+      
 languages:
   default: '서버 기본값'
   en: '영어'
